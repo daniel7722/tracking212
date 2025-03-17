@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { CiSearch } from 'react-icons/ci';
 import { IoMdNotificationsOutline } from 'react-icons/io';
-import { RiArrowDropDownLine, RiHome5Line } from 'react-icons/ri';
+import { RiArrowDropDownLine, RiHistoryLine, RiHome5Line } from 'react-icons/ri';
 
 import appLogo from '@/public/apple-touch-icon.png';
 
@@ -39,6 +39,12 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-8">
             <Link href="/" className="text-[var(--text-color)] hover:text-gray-800">
               <RiHome5Line className="h-6 w-6" />
+            </Link>
+            <Link
+              href="/historical-order-data"
+              className="text-[var(--text-color)] hover:text-gray-800"
+            >
+              <RiHistoryLine className="h-6 w-6" />
             </Link>
           </div>
 
