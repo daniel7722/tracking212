@@ -11,8 +11,7 @@ async function HistoricData() {
 
 export default function HistoricalOrderData() {
   return (
-    <main className="bg-[var(--bg-color)]">
-      <h2>Historic Order Data</h2>
+    <main className="w-3/4 h-full p-2 m-auto bg-[var(--bg-color)]">
       <Suspense fallback={<div>Loading...</div>}>
         <HistoricData />
       </Suspense>
